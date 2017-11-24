@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+ <link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<meta charset="utf-8" />
+	<title>Создание адаптивного сайта - ПРИМЕР</title>
+	<meta name="description" content="Создание адаптивного сайта" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="{% static 'libs/bootstrap/bootstrap-grid-3.3.1.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/font-awesome-4.2.0/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/fancybox/jquery.fancybox.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/owl-carousel/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'libs/countdown/jquery.countdown.css' %}">
+    <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/media.css' %}">
+</head>
+<body>
+	<header class="top_header">
+		<div class="header_topline">
+			<div class="container">
+				<div class="col-md-12">
+					<div class="row">
+						<button class="auth_buttons hidden-md hidden-lg hidden-sm"><i class="fa fa-user"></i></button>
+						<div class="top_links">
+							<a href="" target="_blank">Вход</a> /
+							<a href="" target="_blank">Регистрация</a>
+						</div>
+						<div class="soc_buttons">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="" target="_blank" class="logo">Конструктор тестов</a>
+                    <nav class="maian_mnu clearfix">
+                        <button class="main_mnu_button hidden-md hidden-lg hidden-sm"><i class="fa fa-bars"></i></button>
+                        <ul>
+							<li class="active col-md-3"><a href="" target="_blank">Главная</a></li>
+							<li class="col-sm-3"><a href="" target="_blank">Создать тест</a></li>
+							<li class="col-sm-3"><a href="" target="_blank">Мои тесты</a></li>
+							<li class="col-sm-3"><a href="" target="_blank">Отзывы</a></li>
+                        </ul>
+                    </nav>
+                    <h1>Редактор теста:</h1>
+                </div>
+            </div>
+        </div
+    </header>
+	<section class="order">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="sell_descr">Самые лучшие приложения для вашего телефона</div>
+				</div>
+				<div class="col-md-5">
+					<div class="sell_right">
+						<a href="#callback" class="button fancybox">Заказать разработку</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="hidden">
+		<form id="callback" class="pop_form">
+			<h3>Заказать разработку</h3>
+			<input type="text" name="name" placeholder="Ваше имя..." required />
+			<input type="text" name="phone" placeholder="Ваше телефон..." required />
+			<button class="button" type="submit">Заказать</button>
+		</form>
+	</div>
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+    <script src="{% static 'libs/jquery-mousewheel/jquery.mousewheel.min.js' %}"></script>
+    <script src="{% static 'libs/jquery/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'libs/fancybox/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'libs/waypoints/waypoints-1.6.2.min.js' %}"></script>
+    <script src="{% static 'libs/scrollto/jquery.scrollTo.min.js' %}"></script>
+    <script src="{% static 'libs/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'libs/countdown/jquery.plugin.js' %}"></script>
+    <script src="{% static 'libs/countdown/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'libs/countdown/jquery.countdown-ru.js' %}"></script>
+    <script src="{% static 'libs/landing-nav/navigation.js' %}"></script>
+    <script src="{% static 'js/common.js' %}"></script>
+
+
+	<!-- Yandex.Metrika counter --><!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter25346996 = new Ya.Metrika({id:25346996, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/25346996" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
