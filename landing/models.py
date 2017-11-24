@@ -4,7 +4,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
-
+#test
 class nametest(models.Model):
     name = models.CharField(max_length=100, verbose_name="Название теста")
     test_summa = models.FloatField(verbose_name="Сумма баллов для сдачи теста", default=0)
