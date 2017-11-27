@@ -1,33 +1,25 @@
-.centre {
-	position: absolute;
+.checkbox_css body {
+	background: #f0f0f0;
 }
 
-.wrap {
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%) scale(2,2);
-}
-
-input {
+.checkbox_css input {
 	display: none;
 }
 
-label {
-	font-size: 24px;
+.checkbox_css label {
+	font-size: 22px;
 	color: #bfbfbf;
 	display: inline-block;
-	padding: 0 0 0 1em;
+	padding: 0 0 0 0em;
 	cursor: pointer;
 }
 .checkbox{
 
 }
-label:before {
+.checkbox_css label:before {
 	content: '';
 	display: inline-block;
 	background: #55D8C6;
-	position: absolute;
 	left: 0;
 	top: 5px;
 	height: 20px;
@@ -40,13 +32,13 @@ label:before {
 	transition: border .3s ease;
 }
 
-input:checked + label:before {
+.checkbox_css input:checked + label:before {
 	border-color: #fff;
 	border-width: 3px;
 }
-input + label {
+.checkbox_css input + label {
 	transition: color .7s ease;
 }
-input:checked + label {
+.checkbox_css input:checked + label {
 	color: #5D5D5D;
 }

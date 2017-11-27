@@ -22,8 +22,10 @@
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <link rel="stylesheet" href="{% static 'css/media.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
+
 	<header class="top_header">
 		<div class="header_topline">
 			<div class="container">
@@ -72,25 +74,40 @@
 								</div>
 								<input name="{{ formN.name.name }}" class="form-control name_test">
 							</div>
-							<div class="form-group-inline">
-								<div class="test">
-									<label>Сумма баллов для сдачи теста:</label>
+
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="test">
+										<label>Сумма баллов для сдачи теста:</label>
+									</div>
 								</div>
-								<input name="{{ formN.test_summa.name }}" class="form-control test_ssumma_test">
-							</div>
-							<div class="form-group">
-								<div class="test">
-									<label>Время, мин:</label>
+								<div class="col-sm-6">
+									<input name="{{ formN.test_summa.name }}" class="form-control test_ssumma_test">
 								</div>
-								<input name="{{ formN.time_of_test.name }}" class="form-control time_of_test_test">
 							</div>
-							<div class="form-group">
-								<div class="test">
-									<label>Вопросы по порядку:</label>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="test">
+										<label>Время, мин:</label>
+									</div>
 								</div>
-								<input name="{{ formN.poryad.name }}" class="form-control poryad_test" >
+								<div class="col-sm-6">
+									<input name="{{ formN.time_of_test.name }}" class="form-control time_of_test_test">
+								</div>
 							</div>
-							<button type="submit" class="btn btn-primary btn-orange">Отправить</button>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="checkbox checkbox_css">
+										<input id="check" type="checkbox" name="formN.poryad.name" value="check">
+										<label for="check">Сделать вопросы по порядку</label>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<button type="submit" class="button fancybox">Отправить</button>
+								</div>
+							</div>
 						</form>
 					</div>
 				</div>
@@ -100,7 +117,6 @@
 		</div>
 		</div>
 	</section>
-
 
 
 
