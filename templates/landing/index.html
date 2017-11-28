@@ -64,48 +64,53 @@
 	<section class="order">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-7">
+				<div class="col-sm-8">
 					<div>
-						<form action="" method="post" class="text-center form-inline">{% csrf_token %}
-
-							<div class="form-group">
-								<div class="test">
-									<label>Название теста:</label>
-								</div>
-								<input name="{{ formN.name.name }}" class="form-control name_test">
-							</div>
-
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="test">
-										<label>Сумма баллов для сдачи теста:</label>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<input name="{{ formN.test_summa.name }}" class="form-control test_ssumma_test">
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6">
-									<div class="test">
-										<label>Время, мин:</label>
-									</div>
-								</div>
-								<div class="col-sm-6">
-									<input name="{{ formN.time_of_test.name }}" class="form-control time_of_test_test">
-								</div>
-							</div>
-							<div class="row">
+						<form action="" method="post" class="text-center">{% csrf_token %}
+							<label>Название теста:</label>
+							<input name="{{ formN.name.name }}" class="form-control test_main">
+							<div class="row test">
 								<div class="col-sm-12">
+									<div class="colli">
+										<ul>
+											<li>
+												<label>Сумма баллов для сдачи теста:</label>
+											</li>
+											<li>
+												<input type="number" name="{{ formN.test_summa.name }}" class="form-control test_ssumma_test">
+											</li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+							<div class="row test">
+								<div class="col-sm-12">
+									<div class="colli">
+										<ul>
+											<li>
+												<label>Время, мин:</label>
+											</li>
+											<li>
+												<div class="time_of_test_test">
+													<input type="number" name="{{ formN.time_of_test.name }}" class="form-control time_of_test_test">
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="row">
+								<div class="col-sm-6">
 									<div class="checkbox checkbox_css">
-										<input id="check" type="checkbox" name="formN.poryad.name" value="check">
+										<input id="check" type="checkbox" name="{{ formN.poryad.name }}" value="check">
 										<label for="check">Сделать вопросы по порядку</label>
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-12">
-									<button type="submit" class="button fancybox">Отправить</button>
+									<button type="submit" class="button">Отправить</button>
 								</div>
 							</div>
 						</form>

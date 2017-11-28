@@ -144,7 +144,7 @@ h1 {
 	left: 20px;
 }
 section.order  {
-	background-color: #dac9b3;
+	background-color: #ded6ac;
 	padding: 25px 0;
 }
 .sell_descr {
@@ -216,17 +216,40 @@ section.order  {
 }
 .name_test{
 	border-radius: 5px;
-	width: 50%;
+	width: 100%;
 }
 .test_ssumma_test{
 	border-radius: 5px;
 	width: 20%;
+	max-width: 50px;
+    min-width: 50px;
 }
 .time_of_test_test{
 	border-radius: 5px;
 	width: 20%;
+	max-width: 50px;
+    min-width: 50px;
 }
 .poryad_test{
 	border-radius: 5px;
 	width: 50%;
+}
+.test{
+	margin:15px;
+	text-align: left;
+}
+
+.test_main{
+	border-radius: 5px;
+	width: 100%;
+}
+
+.colli ul{
+	padding: 0 0 0 0;
+	margin: 0 0;
+}
+
+.colli ul li{
+	display: inline-block;
+	padding-right: 10px;
 }

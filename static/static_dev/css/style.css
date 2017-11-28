@@ -1,5 +1,6 @@
 .checkbox_css body {
 	background: #f0f0f0;
+
 }
 
 .checkbox_css input {
@@ -7,11 +8,12 @@
 }
 
 .checkbox_css label {
-	font-size: 22px;
-	color: #bfbfbf;
+	font-size: 18px;
+	color: rgba(192, 23, 33, 0.44);
 	display: inline-block;
 	padding: 0 0 0 0em;
 	cursor: pointer;
+	font-family: "RobotoCondensedLight";
 }
 .checkbox{
 
@@ -40,5 +42,5 @@
 	transition: color .7s ease;
 }
 .checkbox_css input:checked + label {
-	color: #5D5D5D;
+	color: #1f5d2e;
 }
