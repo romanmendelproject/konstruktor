@@ -104,13 +104,13 @@
 								<div class="col-sm-6">
 									<div class="checkbox checkbox_css">
 										<input id="check" type="checkbox" name="{{ formN.poryad.name }}" value="check">
-										<label for="check">Сделать вопросы по порядку</label>
+										<label for="check">Сделать вопросы по порядку?</label>
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-12">
-									<button type="submit" class="button">Отправить</button>
+									<button type="submit" class="button">Добавить вопрос</button>
 								</div>
 							</div>
 						</form>
@@ -122,6 +122,67 @@
 		</div>
 		</div>
 	</section>
+
+
+
+
+	<section class="questions">
+		<div class="questions_container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div>
+						<form action="" method="post" class="text-center">{% csrf_token %}
+							<label>Название вопроса:</label>
+							<input name="{{ formQ.title.name  }}" class="form-control test_main">
+							<div class="row test">
+								<div class="col-sm-12">
+									<div class="colli">
+										<ul>
+											<li>
+												<label>Сумма:</label>
+											</li>
+											<li>
+												<input type="number" name="{{ formQ.summa.name }}" class="form-control test_ssumma_test">
+											</li>
+											<li>
+												<div class="checkboxQ_css">
+													<input id="checkQ" type="checkbox" name="{{ formQ.tip.name }}" value="checkQ">
+													<label for="checkQ">Будет несколько правильных ответов?</label>
+												</div>
+
+											</li>
+											<li class="li_button">
+												<div class="del_button">
+													<button class="button">--</button>
+												</div>
+
+											</li>
+											<li class="li_button">
+												<div class="add_button">
+													<button class="button">+</button>
+												</div>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+
+							</div>
+
+
+
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+
+
 
 
 
@@ -139,6 +200,9 @@
 			</div>
 		</div>
 	</section>
+
+
+
 
 	<div class="hidden">
 		<form id="callback" class="pop_form">

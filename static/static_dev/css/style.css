@@ -15,9 +15,7 @@
 	cursor: pointer;
 	font-family: "RobotoCondensedLight";
 }
-.checkbox{
 
-}
 .checkbox_css label:before {
 	content: '';
 	display: inline-block;
@@ -44,3 +42,56 @@
 .checkbox_css input:checked + label {
 	color: #1f5d2e;
 }
+
+
+
+.checkboxQ_css body {
+	background: #f0f0f0;
+
+}
+
+.checkboxQ_css input {
+	display: none;
+}
+
+.checkboxQ_css label {
+	font-size: 18px;
+	color: rgba(192, 23, 33, 0.44);
+	display: inline-block;
+	padding: 0 0 0 0em;
+	cursor: pointer;
+	font-family: "RobotoCondensedLight";
+}
+
+.checkboxQ_css label:before {
+	content: '';
+	display: inline-block;
+	background: #55D8C6;
+	left: 0;
+	top: 5px;
+	height: 20px;
+	width: 20px;
+	margin-right: 10px;
+	border-radius: 80%;
+	box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .2);
+	box-sizing: border-box;
+	border: 10px solid #fff;
+	transition: border .3s ease;
+}
+
+.checkboxQ_css input:checked + label:before {
+	border-color: #fff;
+	border-width: 3px;
+}
+.checkboxQ_css input + label {
+	transition: color .7s ease;
+}
+.checkboxQ_css input:checked + label {
+	color: #1f5d2e;
+}
+
+.questions_container{
+	background-color: #8b8b8b;
+}
+
+

@@ -253,3 +253,7 @@ section.order  {
 	display: inline-block;
 	padding-right: 10px;
 }
+
+.li_button{
+	float: right;
+}

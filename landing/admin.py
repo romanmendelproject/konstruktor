@@ -1,12 +1,17 @@
 from django.contrib import admin
 from .models import *
 
+
+class ProductInOrderInline(admin.TabularInline):
+    model = Question
+    extra = 0
+
 class nametestAdmin (admin.ModelAdmin):
     # list_display = ["name", "email"]
     list_display = [field.name for field in nametest._meta.fields]
 #    list_filter = ['name',]
 #    search_fields = ['name', 'email']
-
+    inlines = [ProductInOrderInline]
    # fields = ["name"]
 
     # exclude = ["email"]
