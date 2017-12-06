@@ -13,3 +13,9 @@ class QuestionsForm(forms.ModelForm):
     class Meta:
         model = Question
         exclude = [""]
+
+class AnswerForm(forms.ModelForm):
+
+    class Meta:
+        model = Answer
+        exclude = [""]

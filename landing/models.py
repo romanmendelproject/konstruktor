@@ -22,9 +22,9 @@ class nametest(models.Model):
 
 
 class Question(models.Model):
-    title = models.CharField(max_length=200, verbose_name="Вопрос")
+    title = models.CharField(max_length=200, verbose_name="Вопрос",blank=True, null=True, default=None)
     test_id = models.ForeignKey(nametest)
-    summa = models.IntegerField(verbose_name="Сумма", default=0)
+    summa = models.IntegerField(verbose_name="Сумма",blank=True, null=True, default=0)
     tip = models.BooleanField(verbose_name="Несколько правильных ответов", default=False)
 
     def __unicode__(self):

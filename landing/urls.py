@@ -19,5 +19,6 @@ from landing import views
 
 urlpatterns = [
     url(r'^$', views.home, name='home'),
+    url(r'^question_adding/$', views.question_adding, name='question_adding'),
 #    url(r'^landing123/$', views.landing, name='landing'),
 ]
