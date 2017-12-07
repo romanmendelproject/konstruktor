@@ -130,14 +130,16 @@
 <section class="questions">
 	<div class="questions_container">
 		<div class="row">
-			<div class="col-sm-8">
-				<div>
-					<form id="form_question1" action='{% url "question_adding" %}' method="post" class="text-center form_question">{% csrf_token %}
-						<label>Название вопроса:</label>
-						<input id="question_title" class="form-control test_main">
+			<form id="form_question1" action='{% url "question_adding" %}' method="post" class="text-center form_question">{% csrf_token %}
+				<div class="col-sm-8">
+					<div>
+
 						<div class="row test">
 							<div class="col-sm-12">
 								<div  class="colli question_item">
+									<label>Название вопроса:</label>
+									<input id="question_title" class="form-control test_main">
+
 									<ul>
 										<li>
 											<label>Сумма:</label>
@@ -145,21 +147,7 @@
 										<li>
 											<input id="question_number" type="number" class="form-control test_ssumma_test">
 										</li>
-										<li class="li_button action">
-											<div class="del_button">
-												<button type="submit" class="button remove">--</button>
-											</div>
 
-										</li>
-										<li class="li_button action">
-											<div class="add_button">
-												<button type="submit" class="button clone" id="submit_question_btn"
-														data-test_id = "{{ test_id }}"
-
-												>+
-												</button>
-											</div>
-										</li>
 										<li>
 											<div class="checkboxQ_css">
 												<input id="question_check" type="checkbox" value="question_check">
@@ -174,14 +162,36 @@
 							</div>
 
 						</div>
-					</form>
-					<div class="appendform">
 
+						<div class="appendform">
+
+						</div>
 					</div>
 				</div>
-			</div>
+				<div class="col-sm-4">
+					<div class="question_main">
+						<ul>
+							<li class="li_button action">
+								<div class="del_button">
+									<button type="submit" class="button remove">--</button>
+								</div>
 
+							</li>
+							<li class="li_button action">
+								<div class="add_button">
+									<button type="submit" class="button clone" id="submit_question_btn"
+											data-test_id = "{{ test_id }}"
+
+									>+
+									</button>
+								</div>
+							</li>
+						</ul>
+
+					</div>
+			</form>
 		</div>
+	</div>
 	</div>
 	</div>
 	</div>
