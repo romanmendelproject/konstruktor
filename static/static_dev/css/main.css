@@ -144,7 +144,7 @@ h1 {
 	left: 20px;
 }
 section.order  {
-	background-color: #ded6ac;
+ 
 	padding: 25px 0;
 }
 .sell_descr {
@@ -241,7 +241,7 @@ section.order  {
 
 .test_main{
 	border-radius: 5px;
-	width: 100%;
+	width: 70%;
 	margin-bottom: 10px;
 }
 
@@ -253,13 +253,143 @@ section.order  {
 .colli ul{
 	padding: 0 0 0 0;
 	margin: 0 0;
+
 }
 
 .colli ul li{
 	display: inline-block;
 	padding-right: 10px;
+	vertical-align: middle;
 }
 
 .li_button{
 	float: right;
+}
+
+.test{
+	display:block;
+}
+
+
+.question_remove {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #000000;
+	text-shadow: 0 1px 0 #ffffff;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	text-decoration: none;
+	position: absolute;
+    top: -22px;
+    right: 5px;
+}
+.question_remove:hover {
+	color: #000000;
+	text-decoration: none;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	cursor: pointer;
+}
+
+.answer_remove {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+	color: #000000;
+	text-shadow: 0 1px 0 #ffffff;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+	text-decoration: none;
+	position: absolute;
+    top: -23px;
+	right: -10px;
+
+}
+.answer_remove:hover {
+	color: #000000;
+	text-decoration: none;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+	cursor: pointer;
+}
+
+
+.answer_container{
+	border: 3px;
+	border-color: rgba(2, 4, 117, 0.65);
+	border-radius: 10px;
+	border-style: solid;
+	position: relative;
+	height: 150px;
+	background-color: white;
+	margin: 5px 5px 5px 21px;
+	background-color: rgba(8, 54, 111, 0.13);
+}
+
+.input_answer{
+	width: 95%;
+	padding-right: 35px;
+}
+.questions_container{
+	position: relative;
+	border: 3px;
+	border-color: rgba(13, 187, 18, 0.8);
+	border-style: solid;
+	background-color: rgba(86, 121, 87, 0.32);
+	margin: 2px 2px 8px 2px;
+	border-radius: 10px;
+	padding :15px;
+}
+
+.questions_container_css{
+	height: 100px;
+    margin-left: 15px;
+}
+.questions_container_css ul{
+height: 100px
+}
+.questions_container_css ul li{
+	display: inline-block;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+.question_input{
+	width: 70%;
+
+}
+
+.answer_all{
+	background-color: #2bc6a4;
+    border: medium none;
+    border-radius: 25px;
+    color: #fff;
+    display: block;
+    padding: 8px 15px;
+
+}
+
+.free ul {
+	list-style-type: none;
+	float: right;
+	margin-top: 20px;
+    padding-left: 0;
+    position:absolute;
+    top: -20px;
+    right: 2%;
+    width: 200px;
+}
+.free ul li{
+	float: left;
+	margin-bottom: 10px;
+	display: static;
+}
+
+.button_check{
+	display:flex;
+}
+
+.answer_check_allign{
+	margin-left: 20px;
+	text-align: center;
 }

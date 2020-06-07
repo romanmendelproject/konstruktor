@@ -1,97 +1,54 @@
-.checkbox_css body {
-	background: #f0f0f0;
 
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
 }
 
-.checkbox_css input {
-	display: none;
+.action-button
+{
+	position: relative;
+    padding: 1px 12px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
 }
 
-.checkbox_css label {
-	font-size: 18px;
-	color: rgba(192, 23, 33, 0.44);
-	display: inline-block;
-	padding: 0 0 0 0em;
-	cursor: pointer;
-	font-family: "RobotoCondensedLight";
+.blue
+{
+	background-color: #3498DB;
+	border-bottom: 5px solid #2980B9;
+	text-shadow: 0px -2px #2980B9;
 }
 
-.checkbox_css label:before {
-	content: '';
-	display: inline-block;
-	background: #55D8C6;
-	left: 0;
-	top: 5px;
-	height: 20px;
-	width: 20px;
-	margin-right: 10px;
-	border-radius: 80%;
-	box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .2);
-	box-sizing: border-box;
-	border: 10px solid #fff;
-	transition: border .3s ease;
+.red
+{
+	background-color: #E74C3C;
+	border-bottom: 5px solid #BD3E31;
+	text-shadow: 0px -2px #BD3E31;
 }
 
-.checkbox_css input:checked + label:before {
-	border-color: #fff;
-	border-width: 3px;
-}
-.checkbox_css input + label {
-	transition: color .7s ease;
-}
-.checkbox_css input:checked + label {
-	color: #1f5d2e;
+.green
+{
+	background-color: #82BF56;
+	border-bottom: 5px solid #669644;
+	text-shadow: 0px -2px #669644;
 }
 
-
-
-.checkboxQ_css body {
-	background: #f0f0f0;
-
+.yellow
+{
+	background-color: #F2CF66;
+	border-bottom: 5px solid #D1B358;
+	text-shadow: 0px -2px #D1B358;
 }
 
-.checkboxQ_css input {
-	display: none;
+.action-button_active
+{
+	transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+	border-bottom: 1px solid;
 }
-
-.checkboxQ_css label {
-	font-size: 18px;
-	color: rgba(192, 23, 33, 0.44);
-	display: inline-block;
-	padding: 0 0 0 0em;
-	cursor: pointer;
-	font-family: "RobotoCondensedLight";
-}
-
-.checkboxQ_css label:before {
-	content: '';
-	display: inline-block;
-	background: #55D8C6;
-	left: 0;
-	top: 5px;
-	height: 20px;
-	width: 20px;
-	margin-right: 10px;
-	border-radius: 80%;
-	box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .2);
-	box-sizing: border-box;
-	border: 10px solid #fff;
-	transition: border .3s ease;
-}
-
-.checkboxQ_css input:checked + label:before {
-	border-color: #fff;
-	border-width: 3px;
-}
-.checkboxQ_css input + label {
-	transition: color .7s ease;
-}
-.checkboxQ_css input:checked + label {
-	color: #1f5d2e;
-}
-
-.questions_container{
-	background-color: #8b8b8b;
-}
-
-
